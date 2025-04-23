@@ -1,0 +1,112 @@
+======= 🚀 Test Run - Wed Apr 23 20:21:02 UTC 2025 =======
+===== 🧪 Running Python Test Case Generation =====
+2025-04-23 20:21:02,892 - INFO - 🔧 Starting test generation process
+2025-04-23 20:21:02,893 - INFO - ✅ Successfully read reviewed_code.py
+2025-04-23 20:21:04,802 - INFO - ✅ Test cases generated and saved successfully
+2025-04-23 20:21:05,337 - INFO - ===== 🧪 Pytest Output =====
+============================= test session starts ==============================
+platform linux -- Python 3.10.17, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/runner/work/Agents_Suite/Agents_Suite
+plugins: anyio-4.9.0
+collected 13 items
+
+test_reviewed_code.py ...F.....FFFF                                      [100%]
+
+=================================== FAILURES ===================================
+___________________ test_sum_even_numbers_non_integer_input ____________________
+test_reviewed_code.py:16: in test_sum_even_numbers_non_integer_input
+    with pytest.raises(TypeError):
+E   Failed: DID NOT RAISE <class 'TypeError'>
+______________________ test_sum_even_numbers_float_input _______________________
+test_reviewed_code.py:35: in test_sum_even_numbers_float_input
+    with pytest.raises(TypeError):
+E   Failed: DID NOT RAISE <class 'TypeError'>
+______________________ test_sum_even_numbers_mixed_input _______________________
+test_reviewed_code.py:39: in test_sum_even_numbers_mixed_input
+    with pytest.raises(TypeError):
+E   Failed: DID NOT RAISE <class 'TypeError'>
+___________________ test_sum_even_numbers_empty_string_input ___________________
+test_reviewed_code.py:43: in test_sum_even_numbers_empty_string_input
+    with pytest.raises(TypeError):
+E   Failed: DID NOT RAISE <class 'TypeError'>
+_____________________ test_sum_even_numbers_list_with_none _____________________
+test_reviewed_code.py:47: in test_sum_even_numbers_list_with_none
+    with pytest.raises(TypeError):
+E   Failed: DID NOT RAISE <class 'TypeError'>
+=========================== short test summary info ============================
+FAILED test_reviewed_code.py::test_sum_even_numbers_non_integer_input - Failed: DID NOT RAISE <class 'TypeError'>
+FAILED test_reviewed_code.py::test_sum_even_numbers_float_input - Failed: DID NOT RAISE <class 'TypeError'>
+FAILED test_reviewed_code.py::test_sum_even_numbers_mixed_input - Failed: DID NOT RAISE <class 'TypeError'>
+FAILED test_reviewed_code.py::test_sum_even_numbers_empty_string_input - Failed: DID NOT RAISE <class 'TypeError'>
+FAILED test_reviewed_code.py::test_sum_even_numbers_list_with_none - Failed: DID NOT RAISE <class 'TypeError'>
+========================= 5 failed, 8 passed in 0.05s ==========================
+
+
+2025-04-23 20:21:05,337 - ERROR - ❌ One or more tests failed.
+✅ Test cases generated and saved successfully!
+❌ Tests failed. Check log.
+===== 🧪 Pytest Output =====
+============================= test session starts ==============================
+platform linux -- Python 3.10.17, pytest-8.3.5, pluggy-1.5.0 -- /opt/hostedtoolcache/Python/3.10.17/x64/bin/python
+cachedir: .pytest_cache
+rootdir: /home/runner/work/Agents_Suite/Agents_Suite
+plugins: anyio-4.9.0
+collecting ... collected 13 items
+
+test_reviewed_code.py::test_sum_even_numbers_valid_input PASSED          [  7%]
+test_reviewed_code.py::test_sum_even_numbers_empty_list PASSED           [ 15%]
+test_reviewed_code.py::test_sum_even_numbers_none_input PASSED           [ 23%]
+test_reviewed_code.py::test_sum_even_numbers_non_integer_input FAILED    [ 30%]
+test_reviewed_code.py::test_sum_even_numbers_negative_numbers PASSED     [ 38%]
+test_reviewed_code.py::test_sum_even_numbers_zero PASSED                 [ 46%]
+test_reviewed_code.py::test_sum_even_numbers_large_numbers PASSED        [ 53%]
+test_reviewed_code.py::test_sum_even_numbers_single_element PASSED       [ 61%]
+test_reviewed_code.py::test_sum_even_numbers_no_even_numbers PASSED      [ 69%]
+test_reviewed_code.py::test_sum_even_numbers_float_input FAILED          [ 76%]
+test_reviewed_code.py::test_sum_even_numbers_mixed_input FAILED          [ 84%]
+test_reviewed_code.py::test_sum_even_numbers_empty_string_input FAILED   [ 92%]
+test_reviewed_code.py::test_sum_even_numbers_list_with_none FAILED       [100%]
+
+=================================== FAILURES ===================================
+___________________ test_sum_even_numbers_non_integer_input ____________________
+
+    def test_sum_even_numbers_non_integer_input():
+>       with pytest.raises(TypeError):
+E       Failed: DID NOT RAISE <class 'TypeError'>
+
+test_reviewed_code.py:16: Failed
+______________________ test_sum_even_numbers_float_input _______________________
+
+    def test_sum_even_numbers_float_input():
+>       with pytest.raises(TypeError):
+E       Failed: DID NOT RAISE <class 'TypeError'>
+
+test_reviewed_code.py:35: Failed
+______________________ test_sum_even_numbers_mixed_input _______________________
+
+    def test_sum_even_numbers_mixed_input():
+>       with pytest.raises(TypeError):
+E       Failed: DID NOT RAISE <class 'TypeError'>
+
+test_reviewed_code.py:39: Failed
+___________________ test_sum_even_numbers_empty_string_input ___________________
+
+    def test_sum_even_numbers_empty_string_input():
+>       with pytest.raises(TypeError):
+E       Failed: DID NOT RAISE <class 'TypeError'>
+
+test_reviewed_code.py:43: Failed
+_____________________ test_sum_even_numbers_list_with_none _____________________
+
+    def test_sum_even_numbers_list_with_none():
+>       with pytest.raises(TypeError):
+E       Failed: DID NOT RAISE <class 'TypeError'>
+
+test_reviewed_code.py:47: Failed
+=========================== short test summary info ============================
+FAILED test_reviewed_code.py::test_sum_even_numbers_non_integer_input - Failed: DID NOT RAISE <class 'TypeError'>
+FAILED test_reviewed_code.py::test_sum_even_numbers_float_input - Failed: DID NOT RAISE <class 'TypeError'>
+FAILED test_reviewed_code.py::test_sum_even_numbers_mixed_input - Failed: DID NOT RAISE <class 'TypeError'>
+FAILED test_reviewed_code.py::test_sum_even_numbers_empty_string_input - Failed: DID NOT RAISE <class 'TypeError'>
+FAILED test_reviewed_code.py::test_sum_even_numbers_list_with_none - Failed: DID NOT RAISE <class 'TypeError'>
+========================= 5 failed, 8 passed in 0.05s ==========================
